@@ -7,10 +7,29 @@ pipeline {
         bat 'clean.bat'
       }
     }
-    stage('Build') {
+    stage('Build App') {
       steps {
-        echo 'Building app'
-        bat 'build.bat'
+        parallel(
+          "Build App": {
+            echo 'Building app'
+            bat 'build.bat'
+            
+          },
+          "Build tests": {
+            bat 'build-tests.bat'
+            
+          }
+        )
+      }
+    }
+    stage('prepare tests') {
+      steps {
+        bat 'prepare-tests'
+      }
+    }
+    stage('run tests') {
+      steps {
+        bat 'run-tests.bat'
       }
     }
   }
