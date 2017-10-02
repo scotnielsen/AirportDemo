@@ -34,7 +34,7 @@ pipeline {
     }
     stage('Collect artefacts') {
       steps {
-        archiveArtifacts '.\\bin\\*.*'
+        archiveArtifacts 'bin\\*.*'
       }
     }
   }
