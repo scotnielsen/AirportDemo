@@ -1,4 +1,5 @@
 setlocal
+echo on
 
 if not exist .\bin mkdir .\bin
 
