@@ -1,15 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Clean dirs') {
       steps {
         echo 'Building Code'
         bat 'clean.bat'
       }
     }
-    stage('Coding standards') {
+    stage('Build') {
       steps {
-        echo 'Running Analyzer'
+        echo 'Building app'
+        bat 'build.bat'
       }
     }
   }
