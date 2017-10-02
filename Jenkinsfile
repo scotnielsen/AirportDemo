@@ -35,7 +35,7 @@ pipeline {
     stage('Collect artefacts') {
       steps {
         archiveArtifacts 'bin\\*.*'
-        junit 'bin\\'
+        junit 'bin\\*.xml'
       }
     }
   }
