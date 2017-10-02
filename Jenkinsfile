@@ -4,6 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building Code'
+        sh '''call clean.bat
+'''
       }
     }
     stage('Coding standards') {
