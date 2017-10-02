@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clean dirs') {
       steps {
-        echo 'Building Code'
+        echo 'Cleaning up '
         bat 'clean.bat'
       }
     }
