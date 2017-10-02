@@ -5,7 +5,7 @@ call "C:\Program Files (x86)\Micro Focus\Visual COBOL\CreateEnv.bat"
 popd
 cd bin
 set dd_airports=TestAirportLinkLibrary.dat
-mfurun AirportTests.dll
+mfurun -report:junit AirportTests.dll
 
 endlocal
 
