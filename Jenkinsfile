@@ -12,11 +12,11 @@ pipeline {
         parallel(
           "Build App": {
             echo 'Building app'
-            bat 'build.bat'
+            bat(script: 'build.bat', returnStatus: true, returnStdout: true)
             
           },
           "Build tests": {
-            bat 'build-tests.bat'
+            bat(script: 'build-tests.bat', returnStatus: true, returnStdout: true)
             
           }
         )
@@ -24,7 +24,7 @@ pipeline {
     }
     stage('prepare tests') {
       steps {
-        bat 'prepare-tests'
+        bat(script: 'prepare-tests', returnStatus: true, returnStdout: true)
       }
     }
     stage('run tests') {
