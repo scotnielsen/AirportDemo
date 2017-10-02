@@ -1,1 +1,1 @@
-if exist .\bin del /q .\bin\*
+del /q bin\*
