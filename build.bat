@@ -2,23 +2,23 @@ setlocal
 echo on
 
 if not exist .\bin mkdir .\bin
-
+pushd %CD%
 call "C:\Program Files (x86)\Micro Focus\Visual COBOL\CreateEnv.bat"
-
+popd
 set COBCPY=%COBCPY%;.\copybooks
 
-
+echo %CD%
 rem compile library and main executable
-cbllink -d -Udirs.dir -obin\airportlinklibrary.dll AirportLinkLibrary\aircode.cbl
-cbllink -Udirs.dir -obin\AirportConsoleApplication.exe AirportConsoleApplication\airport.cbl
+cbllink -d -U.\dirs.dir -obin\airportlinklibrary.dll AirportLinkLibrary\aircode.cbl
+cbllink -U.\dirs.dir -obin\AirportConsoleApplication.exe AirportConsoleApplication\airport.cbl
 
 
 rem compile tests
-; cbllink -d -Udirs.dir -obin\AirportTests.dll TestAirportLinkLibrary\TestAIRCODE.cbl ; TestAirportLinkLibrary\TestGetDetails.cbl TestAirportLinkLibrary\TestGetMatches.cbl
+cbllink -d -U.\dirs.dir -obin\AirportTests.dll TestAirportLinkLibrary\TestAIRCODE.cbl TestAirportLinkLibrary\TestGetDetails.cbl TestAirportLinkLibrary\TestGetMatches.cbl
 
-; copy TestAirportLinkLibrary\TestAirportLinkLibrary.dat .\bin
-; set dd_airports=TestAirportLinkLibrary.dat
-; mfurun AirportTests.dll
+rem copy TestAirportLinkLibrary\TestAirportLinkLibrary.dat .\bin
+rem set dd_airports=TestAirportLinkLibrary.dat
+rem mfurun AirportTests.dll
 
 endlocal
 
