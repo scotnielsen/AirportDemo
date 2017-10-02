@@ -1,13 +1,15 @@
 setlocal
 
+if not exist .\bin mkdir .\bin
+
 call "C:\Program Files (x86)\Micro Focus\Visual COBOL\CreateEnv.bat"
 
 set COBCPY=%COBCPY%;.\copybooks
 
 
 rem compile library and main executable
-; cbllink -d -Udirs.dir -obin\airportlinklibrary.dll AirportLinkLibrary\aircode.cbl
-; cbllink -Udirs.dir -obin\AirportConsoleApplication.exe AirportConsoleApplication\airport.cbl
+cbllink -d -Udirs.dir -obin\airportlinklibrary.dll AirportLinkLibrary\aircode.cbl
+cbllink -Udirs.dir -obin\AirportConsoleApplication.exe AirportConsoleApplication\airport.cbl
 
 
 rem compile tests
