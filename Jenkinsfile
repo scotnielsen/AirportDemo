@@ -32,5 +32,10 @@ pipeline {
         bat 'run-tests.bat'
       }
     }
+    stage('Collect artefacts') {
+      steps {
+        archiveArtifacts '.\\bin\\*.*'
+      }
+    }
   }
 }
