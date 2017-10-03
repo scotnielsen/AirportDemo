@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <ProjectGuid>{CFBE6432-F4B6-4030-9833-08F24AE0C092}</ProjectGuid>
     <ProjectTypeGuids>{9B4C43C6-818D-4EE4-A817-4CC01335F561};{535C04D7-A2A5-47c7-83E0-B340A995CD1F}</ProjectTypeGuids>
-    <OutputName>TestAirportLibrary</OutputName>
+    <OutputName>TestAirportLib</OutputName>
     <OutputType>Library</OutputType>
     <RootNamespace>TestAirportLibrary</RootNamespace>
     <MFProjectType>Native</MFProjectType>

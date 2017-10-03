@@ -1,14 +1,7 @@
-setlocal
+setlocal 
+
 echo on
-
-if not exist .\bin mkdir .\bin
-pushd %CD%
-call "C:\Program Files (x86)\Micro Focus\Visual COBOL\CreateEnv.bat"
-popd
-set COBCPY=%COBCPY%;.\copybooks
-
-rem compile tests
-cbllink -d -U.\dirs.dir -obin\AirportTests.dll TestAirportLinkLibrary\TestAIRCODE.cbl TestAirportLinkLibrary\TestGetDetails.cbl TestAirportLinkLibrary\TestGetMatches.cbl
+call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\vsmsbuildcmd.bat"
+msbuild TestAirportLib\TestAirportLib.cblproj /t:rebuild
 
 endlocal
-
