@@ -1,3 +1,0 @@
-LNK-MATCHED-CODES (1) = MAD - Barajas                       
-LNK-MATCHED-CODES (2) = MAE - Madera Municipal Air          
-LNK-MATCHED-CODES (3) = MAF - Midland Intl                  

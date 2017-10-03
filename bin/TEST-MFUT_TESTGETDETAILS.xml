@@ -1,0 +1,10 @@
+<testsuite tests="001" failures="000" errors="000" skipped="000" name="MFUT_TESTGETDETAILS" hostname="NWB-SPN7" timestamp="2017-10-03T11:29:18" time="0.0000">
+ <testcase name="MFUT_TESTGETDETAILS"  classname="MFUT_TESTGETDETAILS" time="0.0000">
+ </testcase>
+<system-out> <![CDATA[
+TestCase 1 -  AP-COUNTRY = Spain
+TestCase 1 -  AP-CITY = Madrid
+TestCase 2 -  AP-COUNTRY = Niuafo'ou Island
+TestCase 2 -  AP-CITY = Angaha
+]]></system-out>
+</testsuite>

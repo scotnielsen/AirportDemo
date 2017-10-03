@@ -1,0 +1,41 @@
+Micro Focus COBOL - mfurun Utility
+Unit Testing Framework for Windows/Native/32
+
+Fixture filename : TestAirportLib
+
+Test case                  : MFUT_TESTAIRCODE
+ Status                    : Completed / Passed
+ Time taken in ms          : 0
+ Return Code               : 000000000
+ Console output            :
+  DISTANCE-MILES =  4,787
+  DISTANCE-KM =  7,703
+
+
+Test case                  : MFUT_TESTGETDETAILS
+ Status                    : Completed / Passed
+ Time taken in ms          : 0
+ Return Code               : 000000000
+ Console output            :
+  TestCase 1 -  AP-COUNTRY = Spain
+  TestCase 1 -  AP-CITY = Madrid
+  TestCase 2 -  AP-COUNTRY = Niuafo'ou Island
+  TestCase 2 -  AP-CITY = Angaha
+
+
+Test case                  : MFUT_TESTGETMATCHES
+ Status                    : Completed / Passed
+ Time taken in ms          : 0
+ Return Code               : 000000000
+ Console output            :
+  LNK-MATCHED-CODES (1) = MAD - Barajas
+  LNK-MATCHED-CODES (2) = MAE - Madera Municipal Air
+  LNK-MATCHED-CODES (3) = MAF - Midland Intl
+
+
+Test Run Summary
+ Overall Result            : Passed
+ Tests run                 : 3
+ Tests passed              : 3
+ Tests failed              : 0
+ Total execution time      : 0
