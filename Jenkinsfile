@@ -9,10 +9,6 @@ pipeline {
     stage('Run Analysis') {
       steps {
         parallel(
-          "Run Analysis": {
-            echo 'Checking for dead code'
-            
-          },
           "Build application": {
             bat 'build.bat'
             
@@ -26,8 +22,17 @@ pipeline {
     }
     stage('Run Tests') {
       steps {
-        bat 'run-tests.bat'
-        junit 'bin\\*.xml'
+        parallel(
+          "Run Tests": {
+            bat 'run-tests.bat'
+            junit 'bin\\*.xml'
+            
+          },
+          "Run Code Analysis": {
+            bat 'run-code-analysis.bat'
+            
+          }
+        )
       }
     }
     stage('Collect Artefacts') {
