@@ -9,7 +9,7 @@ pipeline {
     stage('Run Analysis') {
       steps {
         parallel(
-          "Build application": {
+          "Build Application": {
             bat 'build.bat'
             
           },
@@ -28,7 +28,7 @@ pipeline {
             junit 'bin\\*.xml'
             
           },
-          "Run Code Analysis": {
+          "Check Coding Standards": {
             bat 'run-code-analysis.bat'
             
           }
