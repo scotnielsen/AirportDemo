@@ -1,0 +1,4 @@
+TestCase 1 -  AP-COUNTRY = Spain                
+TestCase 1 -  AP-CITY = Madrid                         
+TestCase 2 -  AP-COUNTRY = Niuafo'ou Island     
+TestCase 2 -  AP-CITY = Angaha                         

@@ -1,0 +1,4 @@
+c:\taipei\bin\AirportConsoleApplication.exe.mfgcf
+c:\taipei\bin\airports.dat
+c:\taipei\bin\AirportConsoleApplication.exe
+c:\taipei\AirportConsoleApplication\obj\x86\Debug\AirportConsoleApplication.exe

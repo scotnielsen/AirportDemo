@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "AirportApp", "AirportApp\AirportApp.cblproj", "{2ED2EAB4-D5A2-47AD-9AEA-BD8EAA8CF9A6}"
+EndProject
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "AirportLib", "AirportLib\AirportLib.cblproj", "{B1231375-1DA7-44F8-B8CC-ECDE7D7165FE}"
+EndProject
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "TestAirportLib", "TestAirportLib\TestAirportLib.cblproj", "{CFBE6432-F4B6-4030-9833-08F24AE0C092}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ED2EAB4-D5A2-47AD-9AEA-BD8EAA8CF9A6}.Debug|x86.ActiveCfg = Debug|x86
+		{2ED2EAB4-D5A2-47AD-9AEA-BD8EAA8CF9A6}.Debug|x86.Build.0 = Debug|x86
+		{2ED2EAB4-D5A2-47AD-9AEA-BD8EAA8CF9A6}.Release|x86.ActiveCfg = Release|x86
+		{2ED2EAB4-D5A2-47AD-9AEA-BD8EAA8CF9A6}.Release|x86.Build.0 = Release|x86
+		{B1231375-1DA7-44F8-B8CC-ECDE7D7165FE}.Debug|x86.ActiveCfg = Debug|x86
+		{B1231375-1DA7-44F8-B8CC-ECDE7D7165FE}.Debug|x86.Build.0 = Debug|x86
+		{B1231375-1DA7-44F8-B8CC-ECDE7D7165FE}.Release|x86.ActiveCfg = Release|x86
+		{B1231375-1DA7-44F8-B8CC-ECDE7D7165FE}.Release|x86.Build.0 = Release|x86
+		{CFBE6432-F4B6-4030-9833-08F24AE0C092}.Debug|x86.ActiveCfg = Debug|x86
+		{CFBE6432-F4B6-4030-9833-08F24AE0C092}.Debug|x86.Build.0 = Debug|x86
+		{CFBE6432-F4B6-4030-9833-08F24AE0C092}.Release|x86.ActiveCfg = Release|x86
+		{CFBE6432-F4B6-4030-9833-08F24AE0C092}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D44CCECB-C52D-4273-BF5C-C358E26D3468}
+	EndGlobalSection
+EndGlobal

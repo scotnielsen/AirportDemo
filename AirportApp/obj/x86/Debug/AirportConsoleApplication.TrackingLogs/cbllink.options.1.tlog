@@ -1,0 +1,2 @@
+^C:\TAIPEI\AIRPORTCONSOLEAPPLICATION\OBJ\X86\DEBUG\AIRPORT.OBJ
+MFCBT_Options=-Oobj\x86\Debug\AirportConsoleApplication.exe -M"airport" -N -FM -G obj\x86\Debug\airport.obj . MFCBT_Objs=
