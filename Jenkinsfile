@@ -22,20 +22,16 @@ pipeline {
     }
     stage('Run Tests') {
       steps {
-        parallel(
-          "Run Tests": {
-            bat 'run-tests.bat'
-            junit 'bin\\*.xml'
-            
-          },
-          "Check Coding Standards": {
-            bat 'run-code-analysis.bat'
-            
-          }
-        )
+        bat 'run-tests.bat'
+        junit 'bin\\*.xml'
       }
     }
-    stage('Collect Artefacts') {
+    stage('Coding Standards') {
+      steps {
+        bat 'run-code-analysis.bat'
+      }
+    }
+    stage('Package') {
       steps {
         archiveArtifacts 'bin\\*.*'
       }
