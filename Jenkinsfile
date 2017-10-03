@@ -6,10 +6,10 @@ pipeline {
         bat 'clean.bat'
       }
     }
-    stage('Run Analysis') {
+    stage('Build') {
       steps {
         parallel(
-          "Build Application": {
+          "Build App": {
             bat 'build.bat'
             
           },
