@@ -28,21 +28,21 @@ pipeline {
     }
     stage('Coding Standards') {
       steps {
-        parallel(
-          "Coding Standards": {
-            bat 'run-code-analysis.bat'
-            
-          },
-          "": {
-            archiveArtifacts 'AirportLib\\MFCAResults.log'
-            
-          }
-        )
+        bat 'run-code-analysis.bat'
       }
     }
     stage('Package') {
       steps {
-        archiveArtifacts 'bin\\*.*'
+        parallel(
+          "Package": {
+            archiveArtifacts 'bin\\*.*'
+            
+          },
+          "Get Analysis Log": {
+            archiveArtifacts 'AirportLib\\MFCAResults.log'
+            
+          }
+        )
       }
     }
   }
