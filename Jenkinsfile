@@ -22,13 +22,17 @@ pipeline {
     }
     stage('Run Tests') {
       steps {
-        bat 'run-tests.bat'
-        junit 'bin\\*.xml'
-      }
-    }
-    stage('Coding Standards') {
-      steps {
-        bat 'run-code-analysis.bat'
+        parallel(
+          "Unit Tests": {
+            bat 'run-tests.bat'
+            junit 'bin\\*.xml'
+            
+          },
+          "Code Analysis": {
+            bat 'run-code-analysis.bat'
+            
+          }
+        )
       }
     }
     stage('Package') {
