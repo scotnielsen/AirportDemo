@@ -22,19 +22,14 @@ pipeline {
     }
     stage('Run Tests') {
       steps {
-        bat 'run-tests.bat'
-        junit 'bin\\*.xml'
-      }
-    }
-    stage('Coding Standards') {
-      steps {
         parallel(
-          "Coding Standards": {
-            bat 'run-code-analysis.bat'
+          "Unit Tests": {
+            bat 'run-tests.bat'
+            junit 'bin\\*.xml'
             
           },
-          "": {
-            archiveArtifacts 'AirportLib\\MFCAResults.log'
+          "Code Analysis": {
+            bat 'run-code-analysis.bat'
             
           }
         )
@@ -42,7 +37,16 @@ pipeline {
     }
     stage('Package') {
       steps {
-        archiveArtifacts 'bin\\*.*'
+        parallel(
+          "Package": {
+            archiveArtifacts 'bin\\*.*'
+            
+          },
+          "Get Analysis Log": {
+            archiveArtifacts 'AirportLib\\MFCAResults.log'
+            
+          }
+        )
       }
     }
   }
