@@ -1,8 +1,0 @@
-<testsuite tests="001" failures="000" errors="000" skipped="000" name="MFUT_TESTAIRCODE" hostname="NWB-SPN7" timestamp="2017-10-03T11:29:18" time="0.0000">
- <testcase name="MFUT_TESTAIRCODE"  classname="MFUT_TESTAIRCODE" time="0.0000">
- </testcase>
-<system-out> <![CDATA[
-DISTANCE-MILES =  4,787
-DISTANCE-KM =  7,703
-]]></system-out>
-</testsuite>

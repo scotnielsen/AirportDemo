@@ -1,9 +1,0 @@
-<testsuite tests="001" failures="000" errors="000" skipped="000" name="MFUT_TESTGETMATCHES" hostname="NWB-SPN7" timestamp="2017-10-03T11:29:18" time="0.0000">
- <testcase name="MFUT_TESTGETMATCHES"  classname="MFUT_TESTGETMATCHES" time="0.0000">
- </testcase>
-<system-out> <![CDATA[
-LNK-MATCHED-CODES (1) = MAD - Barajas
-LNK-MATCHED-CODES (2) = MAE - Madera Municipal Air
-LNK-MATCHED-CODES (3) = MAF - Midland Intl
-]]></system-out>
-</testsuite>

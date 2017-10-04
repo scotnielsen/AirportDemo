@@ -103,6 +103,11 @@
            end-if
        .
 
+       Dead-code section.
+           display "this code is never called"
+           display "here for analysis purposes"
+       .
+
        distance-between-airports section.
        *> finds airports and distance between them
            initialize lnk-distance-result

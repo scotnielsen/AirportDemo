@@ -1,2 +1,0 @@
-C:\taipei\bin\AirportLibrary.dll
-C:\taipei\AirportLibrary\obj\x86\Debug\AirportLibrary.dll
