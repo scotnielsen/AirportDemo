@@ -28,7 +28,16 @@ pipeline {
     }
     stage('Coding Standards') {
       steps {
-        bat 'run-code-analysis.bat'
+        parallel(
+          "Coding Standards": {
+            bat 'run-code-analysis.bat'
+            
+          },
+          "": {
+            archiveArtifacts 'AirportLib\\MFCAResults.log'
+            
+          }
+        )
       }
     }
     stage('Package') {
