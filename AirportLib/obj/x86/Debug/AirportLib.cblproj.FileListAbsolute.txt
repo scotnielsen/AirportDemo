@@ -1,2 +1,2 @@
-C:\taipei\bin\AirportLib.dll
-C:\taipei\AirportLib\obj\x86\Debug\AirportLib.dll
+C:\github\AirportDemo\bin\AirportLib.dll
+C:\github\AirportDemo\AirportLib\obj\x86\Debug\AirportLib.dll

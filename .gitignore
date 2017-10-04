@@ -20,3 +20,5 @@ AirportLib/obj/x86/Debug/AirportLibrary.cblproj.FileListAbsolute.txt
 *.tlog
 *.dll
 *.cobolBuildState
+*.xml
+.vs/AirportDemo/v15/.suo

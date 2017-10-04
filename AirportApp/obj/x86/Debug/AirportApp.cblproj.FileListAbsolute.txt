@@ -2,3 +2,7 @@ C:\taipei\bin\AirportApp.exe.mfgcf
 C:\taipei\bin\airports.dat
 C:\taipei\bin\AirportApp.exe
 C:\taipei\AirportApp\obj\x86\Debug\AirportApp.exe
+C:\github\AirportDemo\bin\AirportApp.exe.mfgcf
+C:\github\AirportDemo\bin\airports.dat
+C:\github\AirportDemo\bin\AirportApp.exe
+C:\github\AirportDemo\AirportApp\obj\x86\Debug\AirportApp.exe
