@@ -2,3 +2,6 @@ C:\taipei\TestAirportLibrary\bin\x86\Debug\TestAirportLibrary.dll
 C:\taipei\bin\TestAirportLibrary.dll
 C:\taipei\TestAirportLib\obj\x86\Debug\TestAirportLibrary.dll
 C:\taipei\bin\TestAirportLib.dat
+C:\github\AirportDemo\bin\TestAirportLib.dat
+C:\github\AirportDemo\bin\TestAirportLib.dll
+C:\github\AirportDemo\TestAirportLib\obj\x86\Debug\TestAirportLib.dll

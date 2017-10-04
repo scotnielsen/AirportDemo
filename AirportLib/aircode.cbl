@@ -123,7 +123,7 @@
                    move distance to distance-km
                    move distance-m to distance-miles
                end-if
-           end-if
+           
        .
 
        calculate-airport-distance section.
