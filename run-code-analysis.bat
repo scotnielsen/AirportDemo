@@ -6,7 +6,8 @@ call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\T
 popd
 
 cd airportlib
-msbuild AirportLib.cblproj /t:rebuild /p:TrackFileAccess=true
+
+msbuild AirportLib.cblproj /p:RunMicroFocusCodeAnalysisAfterBuild=True /p:ActiveRuleSets="Within Entire Program; Coding Standards"
 
 endlocal
 
