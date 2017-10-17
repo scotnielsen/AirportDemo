@@ -19,6 +19,9 @@
     <WarningLevel>2</WarningLevel>
     <MaxError>100</MaxError>
     <NativeGraphicalApplication>True</NativeGraphicalApplication>
+    <KeepCodeAnalysisDataFiles>True</KeepCodeAnalysisDataFiles>
+    <RunMicroFocusCodeAnalysisAfterBuild>False</RunMicroFocusCodeAnalysisAfterBuild>
+    <ActiveRulesets>Coding Standards</ActiveRulesets>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>..\bin\x86\Release\</OutputPath>
