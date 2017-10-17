@@ -12,7 +12,7 @@
 
        working-storage section.
        01  user-input      pic x(80).   
-       01 demo-rec pic x.
+       01 demo-rec-a pic x.
 
        local-storage section.
        copy "airparams.cpy" replacing ==(ap-prefix)== by ==ls==.
