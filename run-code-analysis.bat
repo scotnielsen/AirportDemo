@@ -8,7 +8,7 @@ call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\T
 popd
 
 CD AirportLib
-msbuild AirportLib.cblproj /fileLogger /p:RunMicroFocusCodeAnalysisAfterBuild=True /p:ActiveRuleSets="Coding Standards"
+msbuild AirportLib.cblproj /fileLogger /p:RunMicroFocusCodeAnalysisAfterBuild=True /p:ActiveRuleSets="Within Entire Program;Coding Standards"
 find "MFCA" msbuild.log > MFCAResults.log
 
 
