@@ -106,6 +106,7 @@
        Dead-code section.
            display "this code is never called"
            display "here for analysis purposes"
+           display "hello world"
        .
 
        distance-between-airports section.

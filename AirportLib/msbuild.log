@@ -1,4 +1,4 @@
-Build started 04/10/2017 10:50:57.
+Build started 04/10/2017 21:43:50.
 Search paths being used for $(MSBuildExtensionsPath) are C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild;$(MSBuildProgramFiles32)\MSBuild
 Trying to import C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets using extensions path C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild
 Trying to import C:\Program Files (x86)\MSBuild\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets using extensions path C:\Program Files (x86)\MSBuild
@@ -335,31 +335,29 @@ Done executing task "CreateItem".
 Done building target "ForceCoreCompile" in project "AirportLib.cblproj".
 Target "CoreCompile" in file "C:\Program Files (x86)\MSBuild\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets" from project "C:\github\AirportDemo\AirportLib\AirportLib.cblproj" (target "Compile" depends on it):
 Building target "CoreCompile" completely.
-Output file "obj\x86\Debug\aircode" does not exist.
+Output file "obj\x86\Debug\AirportLib.dll" does not exist.
 Task "MakeDir"
+  Creating directory "obj\x86\Debug\AirportLib.TrackingLogs".
 Done executing task "MakeDir".
 Using "Cobol" task from assembly "MicroFocus.COBOL.BuildTasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0412c5e0b2aaa8f0".
 Task "Cobol"
-  Read Tracking Logs:
-  	obj\x86\Debug\AirportLib.TrackingLogs\cobol.read.1.tlog
-  All outputs are up-to-date.
-  No Output files derived from C:\github\AirportDemo\AirportLib\obj\x86\Debug\AirportLib.TrackingLogs\AirportLib.cobolBuildState identified as needing recompilation
   CompileSources item #0 start: 'aircode.cbl' -> 'obj\x86\Debug\aircode.obj'.
   MSBMF015 - Unknown item property: DefiningProjectFullPath for item aircode.cbl
   MSBMF015 - Unknown item property: DefiningProjectDirectory for item aircode.cbl
   MSBMF015 - Unknown item property: DefiningProjectName for item aircode.cbl
   MSBMF015 - Unknown item property: DefiningProjectExtension for item aircode.cbl
   ComputeItemUpToDate(aircode.cbl, obj\x86\Debug\aircode.obj, <BuildInfo>)
-  MSBMF014 - Directives file: _cobol00000001-00002BCC.dir
+  MSBMF014 - Directives file: _cobol00000001-000010CC.dir
   int"C:obj\x86\Debug\aircode.int" visualstudio"1" anim cobidy"..\bin\" sourcetabstop"4" sourceformat"Variable" noquery osext() warnings"1" max-error"100"
   MSBMF005 - Setting COBCPY to: C:\github\AirportDemo\Copybooks;
-  MSBMF006 - Launching C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\bin\tracker.exe /d C:\Windows\Microsoft.NET\Framework\v4.0.30319\FileTracker.dll /i obj\x86\Debug\AirportLib.TrackingLogs /r C:\github\AirportDemo\AirportLib\aircode.cbl /c "C:\Program Files (x86)\Micro Focus\Visual COBOL\bin\cobol.exe" "C:\github\AirportDemo\AirportLib\aircode.cbl" EAGEN(\"C:\github\AirportDemo\AirportLib\obj\x86\Debug\EAAnalysis_1152039944\aircode.xml\") nologo use(_cobol00000001-00002BCC.dir) ;
+  MSBMF006 - Launching C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\tracker.exe /d C:\Windows\Microsoft.NET\Framework\v4.0.30319\FileTracker.dll /i obj\x86\Debug\AirportLib.TrackingLogs /r C:\github\AirportDemo\AirportLib\aircode.cbl /c "C:\Program Files (x86)\Micro Focus\Visual COBOL\bin\cobol.exe" "C:\github\AirportDemo\AirportLib\aircode.cbl" EAGEN(\"C:\github\AirportDemo\AirportLib\obj\x86\Debug\EAAnalysis_1152039944\aircode.xml\") nologo use(_cobol00000001-000010CC.dir) ;
   * Compiling C:\github\AirportDemo\AirportLib\aircode.cbl
   * Generating C:obj\x86\Debug\aircode
   * Data:        1824     Code:        4552     Literals:         772
   CompileSources item #0 build result: True.
   CompileSources item #0 done.
   COBOL compile: 1 item(s) succeeded or up-to-date, 0 failed.
+  Saving updated log cobol.options.1.tlog
 Done executing task "Cobol".
 Task "Message" skipped, due to false condition; ('$(MSBuildTargetsVerbose)'=='true' and '@(DirectivesFiles)' != '') was evaluated as (''=='true' and '' != '').
 Done building target "CoreCompile" in project "AirportLib.cblproj".
@@ -376,8 +374,9 @@ Done building target "AssignLinkerInputs" in project "AirportLib.cblproj".
 Target "Link" in file "C:\Program Files (x86)\MSBuild\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets" from project "C:\github\AirportDemo\AirportLib\AirportLib.cblproj" (target "Linker" depends on it):
 Using "CobolLink" task from assembly "MicroFocus.COBOL.BuildTasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0412c5e0b2aaa8f0".
 Task "CobolLink"
-  MSBMF006 - Launching C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\bin\tracker.exe /d C:\Windows\Microsoft.NET\Framework\v4.0.30319\FileTracker.dll /i obj\x86\Debug\AirportLib.TrackingLogs /r C:\github\AirportDemo\AirportLib\obj\x86\Debug\aircode.obj /c "C:\Program Files (x86)\Micro Focus\Visual COBOL\bin\cbllink.exe" -D -Oobj\x86\Debug\AirportLib.dll -N -FM obj\x86\Debug\aircode.obj
+  MSBMF006 - Launching C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\tracker.exe /d C:\Windows\Microsoft.NET\Framework\v4.0.30319\FileTracker.dll /i obj\x86\Debug\AirportLib.TrackingLogs /r C:\github\AirportDemo\AirportLib\obj\x86\Debug\aircode.obj /c "C:\Program Files (x86)\Micro Focus\Visual COBOL\bin\cbllink.exe" -D -Oobj\x86\Debug\AirportLib.dll -N -FM obj\x86\Debug\aircode.obj
      Creating library obj\x86\Debug\AirportLib.lib and object obj\x86\Debug\AirportLib.exp
+  Saving updated log cbllink.options.1.tlog
 Done executing task "CobolLink".
 Done building target "Link" in project "AirportLib.cblproj".
 Done executing task "CallTarget".
@@ -401,13 +400,12 @@ Target "CoreCompile" skipped. Previously built successfully.
 Target "RunMFCodeAnalysis" in file "C:\Program Files (x86)\MSBuild\Micro Focus\Visual COBOL\V1.0\MicroFocus.CodeAnalysis.targets" from project "C:\github\AirportDemo\AirportLib\AirportLib.cblproj" (target "Compile" depends on it):
 Using "Analysis" task from assembly "MicroFocus.CodeAnalysis.BuildTasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0412c5e0b2aaa8f0".
 Task "Analysis"
-  MSBMF006 - Launching C:\Program Files (x86)\Micro Focus\Visual COBOL\bin\ea\EARunner.exe /p:C:\github\AirportDemo\AirportLib\obj\x86\Debug\EAAnalysis_1152039944\5100436_analysisparameters.xml
+  MSBMF006 - Launching C:\Program Files (x86)\Micro Focus\Visual COBOL\bin\ea\EARunner.exe /p:C:\github\AirportDemo\AirportLib\obj\x86\Debug\EAAnalysis_1152039944\4353025_analysisparameters.xml
   Micro Focus Enterprise Analyzer Command - Line Tool, Version 3.6.1
   Copyright (C) Micro Focus 2015, All Rights Reserved.
   Analysis started.
   Analyzing aircode ...
-C:\github\AirportDemo\AirportLib\aircode.cbl(107,12,107,46): warning MFCA0001: Within Entire Program: Dead Statements: display "this code is never called" [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
-C:\github\AirportDemo\AirportLib\aircode.cbl(108,12,108,47): warning MFCA0001: Within Entire Program: Dead Statements: display "here for analysis purposes" [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
+C:\github\AirportDemo\AirportLib\aircode.cbl(116,12,125,21): warning MFCA0001: Coding Standards: Explicit Scope Terminators: if airport-found = 1 [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
   Analysis Complete.
   
   Done: 00:00:00
@@ -515,7 +513,9 @@ Task "Delete"
 Done executing task "Delete".
 Task "RemoveDuplicates"
 Done executing task "RemoveDuplicates".
-Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as ('C:\github\AirportDemo\bin\AirportLib.dll;C:\github\AirportDemo\AirportLib\obj\x86\Debug\AirportLib.dll'!='C:\github\AirportDemo\bin\AirportLib.dll;C:\github\AirportDemo\AirportLib\obj\x86\Debug\AirportLib.dll').
+Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "WriteLinesToFile"
+Done executing task "WriteLinesToFile".
 Done building target "IncrementalClean" in project "AirportLib.cblproj".
 Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
 Target "CoreBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\github\AirportDemo\AirportLib\AirportLib.cblproj" (target "Build" depends on it):
@@ -533,10 +533,9 @@ Build succeeded.
 
 "C:\github\AirportDemo\AirportLib\AirportLib.cblproj" (default target) (1) ->
 (RunMFCodeAnalysis target) -> 
-  C:\github\AirportDemo\AirportLib\aircode.cbl(107,12,107,46): warning MFCA0001: Within Entire Program: Dead Statements: display "this code is never called" [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
-  C:\github\AirportDemo\AirportLib\aircode.cbl(108,12,108,47): warning MFCA0001: Within Entire Program: Dead Statements: display "here for analysis purposes" [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
+  C:\github\AirportDemo\AirportLib\aircode.cbl(116,12,125,21): warning MFCA0001: Coding Standards: Explicit Scope Terminators: if airport-found = 1 [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
 
-    2 Warning(s)
+    1 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:03.69
+Time Elapsed 00:00:03.85

@@ -1,6 +1,4 @@
 
 ---------- MSBUILD.LOG
-C:\github\AirportDemo\AirportLib\aircode.cbl(107,12,107,46): warning MFCA0001: Within Entire Program: Dead Statements: display "this code is never called" [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
-C:\github\AirportDemo\AirportLib\aircode.cbl(108,12,108,47): warning MFCA0001: Within Entire Program: Dead Statements: display "here for analysis purposes" [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
-  C:\github\AirportDemo\AirportLib\aircode.cbl(107,12,107,46): warning MFCA0001: Within Entire Program: Dead Statements: display "this code is never called" [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
-  C:\github\AirportDemo\AirportLib\aircode.cbl(108,12,108,47): warning MFCA0001: Within Entire Program: Dead Statements: display "here for analysis purposes" [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
+C:\github\AirportDemo\AirportLib\aircode.cbl(116,12,125,21): warning MFCA0001: Coding Standards: Explicit Scope Terminators: if airport-found = 1 [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
+  C:\github\AirportDemo\AirportLib\aircode.cbl(116,12,125,21): warning MFCA0001: Coding Standards: Explicit Scope Terminators: if airport-found = 1 [C:\github\AirportDemo\AirportLib\AirportLib.cblproj]
