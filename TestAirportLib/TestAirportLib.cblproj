@@ -17,9 +17,11 @@
     <DebugSymbols>True</DebugSymbols>
     <MaxError>100</MaxError>
     <SourceFormat>Variable</SourceFormat>
+    <NativeLinkOutputName>TestAirportLib</NativeLinkOutputName>
+    <KeepCodeAnalysisDataFiles>True</KeepCodeAnalysisDataFiles>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <OutputPath>.\bin\x86\Release\</OutputPath>
+    <OutputPath>..\AirportLib\bin\x86\Release\</OutputPath>
     <PlatformTarget>x86</PlatformTarget>
     <ManagedCode>False</ManagedCode>
     <DebugSymbols>True</DebugSymbols>
@@ -28,6 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="TestAIRCODE.cbl" />
+    <Compile Include="TestAIRCODE1.cbl" />
     <Compile Include="TestGetDetails.cbl" />
     <Compile Include="TestGetMatches.cbl" />
   </ItemGroup>
