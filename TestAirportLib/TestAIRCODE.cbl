@@ -51,7 +51,7 @@
        entry MFU-TC-PREFIX & TEST-TESTAIRCODE.
            set get-distance to true 
            move "LHR" to lnk-airport1 *> London Heathrow
-           move "SEA" to lnk-airport2 *> Seattle
+           move "SJC" to lnk-airport2 *> Seattle
 
            call "AIRCODE" using
                        by value lnk-function
